@@ -1,0 +1,431 @@
+/* 
+Developed by Terry Christman
+temchris@yahoo.com
+Free use, no permission needed.
+*/
+
+/* FONTS  
+   Kirang Haerang
+   Raleway
+   Waiting for the Sunrise 
+*/
+/* COLORS
+    #111
+    #E0C097
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* BEACH CONTAINER */
+.beachHeroContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/sandyBeach.jpg);
+  background-size: cover;
+}
+.verseList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  top: 5%;
+  left: 5%;
+  /* transform: translate(-50%, 0%); */
+}
+.verseItem {
+  font-family: 'Waiting for the Sunrise';
+  margin: 0 auto 0 auto;
+  color: #111;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6rem;
+  letter-spacing: 0.4rem;
+  list-style: none;
+}
+
+/* For Development purposes only. */
+/* .screenW1 {
+  position: absolute;
+  font-size: 2.3rem;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.screenW2 {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  font-size: 2.3rem;
+  transform: translate(-50%, 0%);
+}
+.screenW3 {
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  font-size: 2.3rem;
+  transform: translate(-50%, 0%);
+} */
+
+/* Controls aspect ratio, to fit veiw port width and height. 
+Ratio is skewed but on a beach pic it dosent matter.  */
+.sandyBeachImg {
+  height: 100vh;
+  width: 100vw;
+}
+.ccfLogoContainerWide {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 45%;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+.ccfLogoContainerNarrow {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 60%;
+  top: 18%;
+  left: 50%;
+  cursor: pointer;
+}
+/* Wrapper for z-index positioning. */
+.wrapper {
+  position: relative;
+}
+.calvaryText {
+  position: relative;
+  font-family: 'Waiting for the Sunrise';
+  font-size: 10rem;
+  line-height: 10rem;
+  letter-spacing: 1rem;
+  z-index: 2;
+}
+.cross {
+  position: absolute;
+  color: #e0c097;
+  height: 11rem;
+  top: -20%;
+  left: 73%;
+  transform: translate(-50%, 0%);
+  transform: skew(-5deg, 40deg);
+  z-index: 1;
+}
+.christFellowship {
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.ccfLogoText,
+.address,
+.zip,
+.phoneNumber {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+}
+.hoursText {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: 0.5rem;
+  line-height: 5rem;
+  color: #111;
+}
+
+/* 819 to 827 window breaks, switch to ccfLogoContainerNarrow */
+@media all and (max-width: 990px) and (min-width: 771px) {
+  .verseItem {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+  .ccfLogoText,
+  .address,
+  .zip,
+  .phoneNumber {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  .ccfLogoContainerWide {
+    display: none;
+  }
+  .ccfLogoContainerNarrow {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .cfLogoContainerNarrow,
+  .hoursText,
+  .hoursNarrow {
+    display: none;
+  }
+  .hoursWide {
+    display: block;
+    font-size: 1.8rem;
+  }
+}
+@media all and (max-width: 770px) and (min-width: 691px) {
+  .verseList {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .verseItem {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+    letter-spacing: 0.4rem;
+  }
+  .ccfLogoText,
+  .address,
+  .zip,
+  .phoneNumber {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.25rem;
+  }
+  .ccfLogoContainerWide {
+    display: none;
+  }
+  .ccfLogoContainerNarrow {
+    display: flex;
+    width: 50%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .hoursText,
+  .hoursNarrow {
+    display: none;
+  }
+  .hoursWide {
+    display: block;
+    font-size: 1.8rem;
+  }
+}
+@media all and (max-width: 690px) and (min-width: 551px) {
+  .verseList {
+    padding-top: 1rem;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .verseItem {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
+    list-style: none;
+  }
+  .ccfLogoText,
+  .address,
+  .zip,
+  .phoneNumber {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.25rem;
+  }
+  .ccfLogoContainerWide {
+    display: none;
+  }
+  .ccfLogoContainerNarrow {
+    display: flex;
+    width: 60%;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cfLogoContainerNarrow,
+  .hoursText,
+  .hoursNarrow {
+    display: none;
+  }
+  .hoursWide {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 550px) and (min-width: 336px) {
+  .verseList {
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .verseItem {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 4rem;
+    letter-spacing: 0.3rem;
+  }
+  .ccfLogo {
+    display: inline-block;
+    width: 15rem;
+    user-select: auto;
+    -webkit-user-select: none;
+    margin: auto;
+  }
+  .ccfLogoText,
+  .address,
+  .zip,
+  .phoneNumber {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.25rem;
+  }
+  .ccfLogoContainerWide {
+    display: none;
+  }
+  .ccfLogoContainerNarrow {
+    display: flex;
+    width: 90%;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .cfLogoContainerNarrow,
+  .hoursText,
+  .hoursNarrow {
+    display: none;
+  }
+  .hoursWide {
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+  }
+}
+@media all and (max-width: 435px) and (min-width: 335px) {
+  .verseList {
+    top: 47%;
+  }
+  .verseItem {
+    color: #111;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.8rem;
+    letter-spacing: 0.4rem;
+  }
+  .ccfLogo {
+    display: inline-block;
+    width: 15rem;
+    user-select: auto;
+    -webkit-user-select: none;
+    margin: auto;
+  }
+  .ccfLogoText,
+  .address,
+  .zip,
+  .phoneNumber {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.25rem;
+  }
+  .ccfLogoContainerWide {
+    display: none;
+  }
+  .ccfLogoContainerNarrow {
+    display: flex;
+    width: 90%;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .cfLogoContainerNarrow,
+  .hoursText,
+  .hoursNarrow {
+    display: none;
+  }
+  .hoursWide {
+    display: block;
+    line-height: 2rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 334px) {
+  .verseList {
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .verseItem {
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+  .ccfLogo {
+    display: inline-block;
+    width: 100%;
+    user-select: auto;
+    -webkit-user-select: none;
+    margin: auto;
+  }
+  .ccfLogoContainerWide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 85%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+  }
+  .ccfLogoText,
+  .address,
+  .zip,
+  .phoneNumber {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  .addressWide {
+    display: none;
+  }
+  .addressNarrow {
+    display: inline-block;
+  }
+  .zipWide {
+    display: none;
+  }
+  .zipNarrow {
+    display: inline-block;
+  }
+  .hoursText {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    line-height: 3rem;
+    color: #111;
+  }
+}
