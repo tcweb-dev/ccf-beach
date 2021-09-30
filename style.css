@@ -221,7 +221,7 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   }
   .christFellowship {
     font-family: 'Waiting for the Sunrise';
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
   }
   .cfLogoContainerNarrow,
@@ -289,7 +289,7 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   }
   .christFellowship {
     font-family: 'Waiting for the Sunrise';
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
   }
   .hoursText,
@@ -357,7 +357,7 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   }
   .christFellowship {
     font-family: 'Waiting for the Sunrise';
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
   }
   .cfLogoContainerNarrow,
@@ -433,7 +433,7 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   }
   .christFellowship {
     font-family: 'Waiting for the Sunrise';
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
   }
   .cfLogoContainerNarrow,
@@ -520,7 +520,7 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   }
   .christFellowship {
     font-family: 'Waiting for the Sunrise';
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 900;
   }
   .hoursWide {
@@ -530,9 +530,10 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     font-size: 1.2rem;
   }
 }
+/* iphone 5/5SE runs at 320 on device tool bar but works here  */
 @media all and (max-width: 334px) and (min-width: 50px) {
   .verseList {
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, 0%);
   }
@@ -543,10 +544,20 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   .calvaryText {
     position: relative;
     font-family: 'Waiting for the Sunrise';
-    font-size: 8rem;
-    line-height: 10rem;
+    font-size: 6rem;
+    line-height: 6rem;
     letter-spacing: 1rem;
     z-index: 2;
+  }
+  .cross {
+    position: absolute;
+    color: #e0c097;
+    height: 7rem;
+    top: -10%;
+    left: 73%;
+    transform: translate(-50%, 0%);
+    transform: skew(-5deg, 40deg);
+    z-index: 1;
   }
   .ccfLogoText,
   .address,
@@ -556,6 +567,11 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     font-weight: 600;
     line-height: 2rem;
     letter-spacing: 0.2rem;
+  }
+  .christFellowship {
+    font-family: 'Waiting for the Sunrise';
+    font-size: 1.5rem;
+    font-weight: 900;
   }
   .addressWide {
     display: none;

@@ -8,6 +8,7 @@ let logo = document.querySelectorAll('.logoClickListen');
 const width1 = document.querySelector('.screenW1');
 const width2 = document.querySelector('.screenW2');
 const width3 = document.querySelector('.screenW3');
+const phoneNum = document.querySelector('.phoneNumber');
 
 // logo[index] creates a new EventListner for each logo.NodeList item.
 logo.forEach((el, index) => {
@@ -18,6 +19,12 @@ logo.forEach((el, index) => {
     e.preventDefault();
     window.open('https://ccf-indy.com/', '', '');
   });
+});
+//
+phoneNum.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('phoneNum', phoneNum);
+  window.open('tel:3179122388');
 });
 
 // For Development purposes only.
