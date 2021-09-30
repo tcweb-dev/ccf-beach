@@ -2,7 +2,7 @@
 // Developed by Terry C.
 // tcwebdeveloper@yahoo.com
 // Free use, no permission needed.
-//
+
 let logo = document.querySelectorAll('.logoClickListen');
 // For Development purposes only.
 // const width1 = document.querySelector('.screenW1');
