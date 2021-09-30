@@ -8,24 +8,28 @@ let logo = document.querySelectorAll('.logoClickListen');
 const width1 = document.querySelector('.screenW1');
 const width2 = document.querySelector('.screenW2');
 const width3 = document.querySelector('.screenW3');
-const phoneNum = document.querySelector('.phoneNumber');
+const logoPhone = document.querySelectorAll('.phoneNumber');
+console.log('logoPhone', logoPhone);
 
-// logo[index] creates a new EventListner for each logo.NodeList item.
 logo.forEach((el, index) => {
   logo[index] = el;
+  // console.log('logoClickListen', logo[index]);
 
+  // logo[index] creates a new EventListner for each logo.
+  // NodeList item.
   // Opens new window on logo click.
   logo[index].addEventListener('click', (e) => {
     e.preventDefault();
     window.open('https://ccf-indy.com/', '', '');
   });
+  // Opens phone dialer for click on logo phone number.
+  logoPhone[index].addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('logoPhone[index]', logoPhone[index]);
+    window.open('tel:3179122388');
+  });
 });
 //
-phoneNum.addEventListener('click', (e) => {
-  e.preventDefault();
-  console.log('phoneNum', phoneNum);
-  window.open('tel:3179122388');
-});
 
 // For Development purposes only.
 // function writeSize() {
