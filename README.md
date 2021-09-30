@@ -1,6 +1,5 @@
 //
-//
-Developed by Terry Christman
+Developed by Terry C.
 tcwebdeveloper@yahoo.com
 Free use, no permission needed.
 

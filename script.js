@@ -1,6 +1,6 @@
 //
-// Developed by Terry Christman
-// temchris@yahoo.com
+// Developed by Terry C.
+// tcwebdeveloper@yahoo.com
 // Free use, no permission needed.
 //
 let logo = document.querySelectorAll('.logoClickListen');
