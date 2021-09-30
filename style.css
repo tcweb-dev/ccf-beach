@@ -39,7 +39,6 @@ html {
   padding-top: 1rem;
   top: 5%;
   left: 5%;
-  /* transform: translate(-50%, 0%); */
 }
 .verseItem {
   font-family: 'Waiting for the Sunrise';
@@ -84,11 +83,11 @@ Ratio is skewed but on a beach pic it dosent matter.  */
 .ccfLogoContainerWide {
   display: flex;
   flex-direction: column;
+  position: absolute;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  width: 45%;
+  width: 55%;
   top: 5%;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -124,14 +123,13 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   height: 11rem;
   top: -20%;
   left: 73%;
-  transform: translate(-50%, 0%);
   transform: skew(-5deg, 40deg);
   z-index: 1;
 }
 .christFellowship {
-  font-family: 'Kirang Haerang', cursive;
+  font-family: 'Waiting for the Sunrise';
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 900;
 }
 .ccfLogoText,
 .address,
@@ -151,11 +149,18 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   color: #111;
 }
 
-/* 819 to 827 window breaks, switch to ccfLogoContainerNarrow */
-@media all and (max-width: 990px) and (min-width: 771px) {
+/* 1000px window breaks, switch to ccfLogoContainerNarrow */
+@media all and (max-width: 1000px) and (min-width: 771px) {
   .verseItem {
     font-size: 3rem;
     line-height: 6rem;
+  }
+  .verseList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 5%;
+    left: 5%;
   }
   .ccfLogoText,
   .address,
@@ -168,14 +173,55 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   }
   .ccfLogoContainerWide {
     display: none;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    top: 5%;
+    left: 50%;
+    cursor: pointer;
   }
   .ccfLogoContainerNarrow {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 55%;
     top: 5%;
     left: 50%;
     transform: translate(-50%, 0%);
+    cursor: pointer;
+  }
+  /* Wrapper for z-index positioning. */
+  .wrapper {
+    position: relative;
+  }
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    z-index: 2;
+  }
+  .cross {
+    position: absolute;
+    color: #e0c097;
+    height: 11rem;
+    top: -20%;
+    left: 73%;
+    transform: translate(-50%, 0%);
+    transform: skew(-5deg, 40deg);
+    z-index: 1;
+  }
+  .christFellowship {
+    font-family: 'Waiting for the Sunrise';
+    font-size: 2.5rem;
+    font-weight: 900;
   }
   .cfLogoContainerNarrow,
   .hoursText,
@@ -218,6 +264,33 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     left: 50%;
     transform: translate(-50%, 0%);
   }
+  /* Wrapper for z-index positioning. */
+  .wrapper {
+    position: relative;
+  }
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    z-index: 2;
+  }
+  .cross {
+    position: absolute;
+    color: #e0c097;
+    height: 11rem;
+    top: -20%;
+    left: 73%;
+    transform: translate(-50%, 0%);
+    transform: skew(-5deg, 40deg);
+    z-index: 1;
+  }
+  .christFellowship {
+    font-family: 'Waiting for the Sunrise';
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
   .hoursText,
   .hoursNarrow {
     display: none;
@@ -229,8 +302,7 @@ Ratio is skewed but on a beach pic it dosent matter.  */
 }
 @media all and (max-width: 690px) and (min-width: 551px) {
   .verseList {
-    padding-top: 1rem;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, 0%);
   }
@@ -256,9 +328,36 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   .ccfLogoContainerNarrow {
     display: flex;
     width: 60%;
-    top: 18%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+  }
+  /* Wrapper for z-index positioning. */
+  .wrapper {
+    position: relative;
+  }
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    z-index: 2;
+  }
+  .cross {
+    position: absolute;
+    color: #e0c097;
+    height: 11rem;
+    top: -20%;
+    left: 73%;
+    transform: translate(-50%, 0%);
+    transform: skew(-5deg, 40deg);
+    z-index: 1;
+  }
+  .christFellowship {
+    font-family: 'Waiting for the Sunrise';
+    font-size: 2.5rem;
+    font-weight: 900;
   }
   .cfLogoContainerNarrow,
   .hoursText,
@@ -272,9 +371,9 @@ Ratio is skewed but on a beach pic it dosent matter.  */
 }
 @media all and (max-width: 550px) and (min-width: 336px) {
   .verseList {
-    top: 44%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
   }
   .verseItem {
     font-size: 1.8rem;
@@ -282,12 +381,13 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     line-height: 4rem;
     letter-spacing: 0.3rem;
   }
-  .ccfLogo {
-    display: inline-block;
-    width: 15rem;
-    user-select: auto;
-    -webkit-user-select: none;
-    margin: auto;
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 5rem;
+    line-height: 3rem;
+    letter-spacing: 1rem;
+    z-index: 2;
   }
   .ccfLogoText,
   .address,
@@ -303,26 +403,58 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   }
   .ccfLogoContainerNarrow {
     display: flex;
-    width: 90%;
-    top: 3%;
+    width: 60%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, 0%);
+  }
+  /* Wrapper for z-index positioning. */
+  .wrapper {
+    position: relative;
+  }
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 1rem;
+    z-index: 2;
+  }
+  .cross {
+    position: absolute;
+    color: #e0c097;
+    height: 5rem;
+    top: -20%;
+    left: 73%;
+    transform: translate(-50%, 0%);
+    transform: skew(-5deg, 40deg);
+    z-index: 1;
+  }
+  .christFellowship {
+    font-family: 'Waiting for the Sunrise';
+    font-size: 2rem;
+    font-weight: 900;
   }
   .cfLogoContainerNarrow,
   .hoursText,
   .hoursNarrow {
     display: none;
   }
-  .hoursWide {
-    display: block;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    line-height: 2.5rem;
+  .hoursNarrow {
+    display: inline;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    line-height: 2.1rem;
   }
 }
-@media all and (max-width: 435px) and (min-width: 335px) {
+@media all and (max-width: 335px) and (min-width: 100px) {
   .verseList {
     top: 47%;
+  }
+  .verseList {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
   .verseItem {
     color: #111;
@@ -331,12 +463,13 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     line-height: 2.8rem;
     letter-spacing: 0.4rem;
   }
-  .ccfLogo {
-    display: inline-block;
-    width: 15rem;
-    user-select: auto;
-    -webkit-user-select: none;
-    margin: auto;
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 9rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    z-index: 2;
   }
   .ccfLogoText,
   .address,
@@ -362,6 +495,33 @@ Ratio is skewed but on a beach pic it dosent matter.  */
   .hoursNarrow {
     display: none;
   }
+  /* Wrapper for z-index positioning. */
+  .wrapper {
+    position: relative;
+  }
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    z-index: 2;
+  }
+  .cross {
+    position: absolute;
+    color: #e0c097;
+    height: 11rem;
+    top: -20%;
+    left: 73%;
+    transform: translate(-50%, 0%);
+    transform: skew(-5deg, 40deg);
+    z-index: 1;
+  }
+  .christFellowship {
+    font-family: 'Waiting for the Sunrise';
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
   .hoursWide {
     display: block;
     line-height: 2rem;
@@ -369,9 +529,9 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     font-size: 1.2rem;
   }
 }
-@media (max-width: 334px) {
+@media all and (max-width: 334px) and (min-width: 50px) {
   .verseList {
-    top: 29%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
   }
@@ -379,25 +539,13 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     font-size: 1.8rem;
     line-height: 4rem;
   }
-  .ccfLogo {
-    display: inline-block;
-    width: 100%;
-    user-select: auto;
-    -webkit-user-select: none;
-    margin: auto;
-  }
-  .ccfLogoContainerWide {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    width: 85%;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    cursor: pointer;
+  .calvaryText {
+    position: relative;
+    font-family: 'Waiting for the Sunrise';
+    font-size: 8rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    z-index: 2;
   }
   .ccfLogoText,
   .address,

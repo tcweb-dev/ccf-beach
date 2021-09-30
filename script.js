@@ -5,9 +5,9 @@
 
 let logo = document.querySelectorAll('.logoClickListen');
 // For Development purposes only.
-// const width1 = document.querySelector('.screenW1');
-// const width2 = document.querySelector('.screenW2');
-// const width3 = document.querySelector('.screenW3');
+const width1 = document.querySelector('.screenW1');
+const width2 = document.querySelector('.screenW2');
+const width3 = document.querySelector('.screenW3');
 
 // logo[index] creates a new EventListner for each logo.NodeList item.
 logo.forEach((el, index) => {
