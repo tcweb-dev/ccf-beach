@@ -3,6 +3,8 @@
 // tcwebdeveloper@yahoo.com
 // Free use, no permission needed.
 
+console.log('hello Netlfy push.');
+
 let logo = document.querySelectorAll('.logoClickListen');
 const logoPhone = document.querySelectorAll('.phoneNumber');
 
