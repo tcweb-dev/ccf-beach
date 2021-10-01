@@ -4,11 +4,12 @@
 // Free use, no permission needed.
 
 let logo = document.querySelectorAll('.logoClickListen');
+const logoPhone = document.querySelectorAll('.phoneNumber');
+
 // For Development purposes only.
 const width1 = document.querySelector('.screenW1');
 const width2 = document.querySelector('.screenW2');
 const width3 = document.querySelector('.screenW3');
-const logoPhone = document.querySelectorAll('.phoneNumber');
 console.log('logoPhone', logoPhone);
 
 logo.forEach((el, index) => {
@@ -22,7 +23,8 @@ logo.forEach((el, index) => {
     e.preventDefault();
     window.open('https://ccf-indy.com/', '', '');
   });
-  // Opens phone dialer for click on logo phone number.
+
+  // Opens phone dialer when logo phone number is clicked.
   logoPhone[index].addEventListener('click', (e) => {
     e.preventDefault();
     console.log('logoPhone[index]', logoPhone[index]);
