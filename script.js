@@ -7,10 +7,9 @@ let logo = document.querySelectorAll('.logoClickListen');
 const logoPhone = document.querySelectorAll('.phoneNumber');
 
 // For Development purposes only.
-const width1 = document.querySelector('.screenW1');
-const width2 = document.querySelector('.screenW2');
-const width3 = document.querySelector('.screenW3');
-console.log('logoPhone', logoPhone);
+// const width1 = document.querySelector('.screenW1');
+// const width2 = document.querySelector('.screenW2');
+// const width3 = document.querySelector('.screenW3');
 
 logo.forEach((el, index) => {
   logo[index] = el;
@@ -27,7 +26,6 @@ logo.forEach((el, index) => {
   // Opens phone dialer when logo phone number is clicked.
   logoPhone[index].addEventListener('click', (e) => {
     e.preventDefault();
-    console.log('logoPhone[index]', logoPhone[index]);
     window.open('tel:3179122388');
   });
 });
@@ -41,6 +39,5 @@ logo.forEach((el, index) => {
 //   width3.textContent = ` Window OuterWidth ${window.outerWidth} px`;
 // }
 // window.addEventListener('resize', writeSize);
-//
 //
 // See also: window.onresize;

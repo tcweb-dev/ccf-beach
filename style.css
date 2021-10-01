@@ -530,7 +530,7 @@ Ratio is skewed but on a beach pic it dosent matter.  */
     font-size: 1.2rem;
   }
 }
-/* iphone 5/5SE runs at 320 on device tool bar but works here  */
+/* iphone 5/5se runs at 320 on Chrome device tool bar but works here at and under 334px.  */
 @media all and (max-width: 334px) and (min-width: 50px) {
   .verseList {
     top: 40%;
